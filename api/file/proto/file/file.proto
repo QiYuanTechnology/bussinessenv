@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package com.lzqysoft.bussinessenv.srv.filesys;
+
+service File {
+    rpc Upload(UploadFileRequest) returns(Response) {}
+    rpc Delete(DeleteFileRequest) returns(Response) {}
+    rpc Update(UpdateFileRequest) returns(Response) {}
+}
+
+message Response {
+    int64 status = 1;
+    string mime = 2;
+    string name = 3;
+    int64  size = 4;
+    string msg = 5;
+}
+
+message UploadFileRequest {
+    string name = 1;
+    bytes file = 2;
+}
+
+message DeleteFileRequest {
+    string fid = 1;
+}
+
+message UpdateFileRequest {
+    string fid = 1;
+    bytes file = 2;
+}

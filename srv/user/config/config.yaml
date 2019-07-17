@@ -1,0 +1,10 @@
+env:
+  - NAMESPACE=com.lzqysoft.bussinessenv
+  - MICRO_REGISTRY=consul
+  - MICRO_REGISTRY_ADDRESS=localhost:8500
+db:
+  type: postgres
+  db: auth
+  user: postgres
+  pwd: 123456
+appid: 101

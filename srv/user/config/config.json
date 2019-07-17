@@ -1,0 +1,25 @@
+{
+  "appId": 101,
+  "storage": {
+    "database": {
+      "type": "postgres",
+      "address": "10.0.0.1",
+      "port": 3306,
+      "db": "filesystem",
+      "user": "postgres",
+      "pwd": "123456"
+    },
+    "cache": {
+      "address": "10.0.0.2",
+      "port": 6379
+    }
+  },
+  "env": {
+      "NAMESPACE": "com.lzqysoft.bussinessenv",
+      "MICRO_REGISTRY": "MICRO_REGISTRY",
+      "MICRO_REGISTRY_ADDRESS": "localhost:8500"
+  }
+}
+
+
+
