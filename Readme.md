@@ -18,5 +18,6 @@ bussinessenv--项目根目录
 |——common--项目公共资源
 |
 |——srv--对外开放服务
+|
 |——base--底层服务
 </code></pre>
