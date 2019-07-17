@@ -14,3 +14,4 @@ check() {
 
 check api
 check srv
+check base
