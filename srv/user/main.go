@@ -28,6 +28,8 @@ func main() {
 	// Register Function as Subscriber
 	micro.RegisterSubscriber("go.micro.srv.user", service.Server(), subscriber.Handler)
 
+	asdf
+
 	// Run service
 	if err := service.Run(); err != nil {
 		log.Fatal(err)
