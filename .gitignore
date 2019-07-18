@@ -1,1 +1,3 @@
-srv/user/user.exe
+*.exe
+*.micro.go
+*.pb.go
